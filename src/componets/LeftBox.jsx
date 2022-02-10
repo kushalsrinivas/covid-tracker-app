@@ -1,33 +1,33 @@
-const LeftBox= (props)=>{
-    const {
-        country,
-        cases,
-        activePerOneMillion,
-        casesPerOneMillion,
-        critical,
-        criticalPerOneMillion,
-        deaths,
-        deathsPerOneMillion,
-        oneCasePerPeople,
-        oneDeathPerPeople,
-        oneTestPerPeople,
-        population,
-        recovered,
-        recoveredPerOneMillion,
-        tests,
-        testsPerOneMillion,
-        active
+import react from "react";
 
-    
-    
-    } = props.info;
+const LeftBox= ( props)=>{
+   
+   const {
+    country,
+    cases,
+    activePerOneMillion,
+    casesPerOneMillion,
+    critical,
+    criticalPerOneMillion,
+    deaths,
+    deathsPerOneMillion,
+    oneCasePerPeople,
+    oneDeathPerPeople,
+    oneTestPerPeople,
+    population,
+    recovered,
+    recoveredPerOneMillion,
+    tests,
+    testsPerOneMillion,
+    active
+} = props.info;
 
 
-if(!props){
-    return <div></div>
-}
+
+
+
     return(
-        <div className="left-box">
+        <div >
         {
              props.avail && 
             (
@@ -53,7 +53,6 @@ if(!props){
             <h3>deaths per people :{oneDeathPerPeople}</h3>
             <h3>tests per people :{oneTestPerPeople}</h3>
             </div>
-            
             </>
             )
      
